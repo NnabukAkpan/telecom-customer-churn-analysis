@@ -1,38 +1,112 @@
 # telecom-customer-churn-analysis
-# Telecom Customer Churn: End-to-End Analytics & Prescriptive Strategy
+# 📊 Telecom Customer Churn Analysis: End-to-End Analytics & Prescriptive Strategy
 
-A 6-stage data analytics and machine learning portfolio project completed during the **CodVeda Data Analytics Internship**, progressing from raw data ingestion to Power BI reporting, statistical hypothesis testing, Random Forest modeling, and prescriptive retention simulation.
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine_Learning-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-EDA-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
-## Executive KPI Snapshot (`churn-bigml-80.csv`)
-* **Total Customers Analyzed:** 2,666
-* **Overall Churn Rate:** 14.55% (388 churned accounts)
-* **Direct Revenue Lost:** $25,157.85
-* **Average Customer Service Calls:** 1.56 calls
+## 📌 Project Overview
+Customer churn is one of the most significant challenges faced by telecommunications companies, as retaining existing customers is substantially more cost-effective than acquiring new ones. This project presents an end-to-end analytics solution that identifies churn drivers, predicts customer attrition, and recommends actionable retention strategies.
+
+By combining data cleaning, exploratory data analysis (EDA), statistical hypothesis testing, business intelligence reporting, machine learning, and prescriptive analytics, this workflow transforms raw telecom customer data into executive-ready business decisions.
 
 ---
 
-## Project Roadmap & Deliverables
+## 🎯 Business Problem & Objectives
+Telecom providers lose substantial recurring revenue when customers discontinue their services. The core objectives of this project are to:
+* **Data Preparation:** Perform thorough data cleaning, validation, and preprocessing.
+* **Exploratory Analysis:** Conduct EDA to uncover behavioral and usage patterns.
+* **BI Reporting:** Build an interactive Power BI dashboard to monitor churn KPIs.
+* **Statistical Validation:** Apply hypothesis testing and regression to isolate statistically significant churn drivers.
+* **Predictive Modeling:** Develop a Random Forest classification model to score churn risk.
+* **Prescriptive Strategy:** Recommend targeted, data-driven customer retention initiatives.
 
-### Level 1 · Data Foundations & Exploration
-* **Task 2 — Data Collection & Cleaning:** [`01_L1_T2_data_collection_and_cleaning.ipynb`](notebooks/01_L1_T2_data_collection_and_cleaning.ipynb)
-  * Verified zero missing or duplicate records across 20 features, standardized categorical flags (`International plan`, `Voice mail plan`, `Churn`), and exported a clean modeling dataset.
-* **Task 3 — Exploratory Data Analysis (EDA):** [`02_L1_T3_exploratory_data_analysis.ipynb`](notebooks/02_L1_T3_exploratory_data_analysis.ipynb)
-  * Profiled central tendency and dispersion (Mean, Median, Mode, Std Dev) and identified a critical churn inflection point at **4+ customer service calls** where attrition exceeds 45%.
+---
 
-### Level 2 · Business Intelligence & Statistical Validation
-* **Task 1 — Power BI Executive Dashboard:** [`telecom_customer_churn.pbix`](bi_dashboard/telecom_customer_churn.pbix)
-  * Built an interactive report tracking KPI cards, regional churn breakdowns, service call thresholds, and international plan exposure.
-  
-  ![Executive Dashboard](bi_dashboard/screenshots/01_executive_kpi_overview.png)
+## 📈 Dataset Summary & Headline KPIs
+Analysis was conducted on the `churn-bigml-80.csv` telecom customer dataset comprising **2,666 customer accounts**:
 
-* **Task 3 — Statistical Analysis for Business Decisions:** [`03_L2_T3_statistical_business_analysis.ipynb`](notebooks/03_L2_T3_statistical_business_analysis.ipynb)
-  * Conducted T-Tests, Chi-Square tests of independence, and Logistic Regression ($p < 0.05$) confirming that daytime billing volume, international plan enrollment, and support call frequency are statistically significant churn drivers.
+| Metric | Value | Business Context |
+| :--- | :--- | :--- |
+| **Total Customers** | **2,666** | Complete active & churned customer base analyzed |
+| **Churned Customers** | **388** | Accounts that discontinued service |
+| **Overall Churn Rate** | **14.55%** | Baseline attrition rate across the portfolio |
+| **Revenue Lost to Churn** | **\$25,157.85** | Direct monthly revenue exposure from churned accounts |
+| **Avg. Customer Service Calls** | **1.56** | Mean support interactions per customer |
 
-### Level 3 · Predictive Modeling & Prescriptive Strategy
-* **Task 1 — Predictive Machine Learning:** [`04_L3_T1_predictive_churn_modeling.ipynb`](notebooks/04_L3_T1_predictive_churn_modeling.ipynb)
-  * Trained a Random Forest Classifier on `churn-bigml-80.csv` and validated performance on unseen data (`churn-bigml-20.csv`) using Confusion Matrix, ROC-AUC, and Feature Importance plots.
-* **Task 3 — Prescriptive Analytics & Strategic Recommendations:** [`05_L3_T3_prescriptive_retention_strategy.ipynb`](notebooks/05_L3_T3_prescriptive_retention_strategy.ipynb)
-  * Scored active accounts by predicted churn probability and modeled net revenue recovery from three targeted interventions:
-    1. **Automated Tier-2 Escalation** triggered on a customer's **3rd service call**.
-    2. **International Bundle Restructuring** for high-usage international callers.
-    3. **Daytime Usage Loyalty Credits** for accounts exceeding 220 daytime minutes.
+---
+
+## 🔄 End-to-End Project Workflow
+
+### 1. Data Cleaning & Preparation
+* Verified dataset integrity and schema consistency across 2,666 records.
+* Audited for missing values and duplicate customer records.
+* Standardized categorical and boolean variables (`Churn`, `International plan`, `Voice mail plan`) for statistical and machine learning compatibility.
+* Engineered total usage and charge metrics for financial impact modeling.
+
+### 2. Exploratory Data Analysis (EDA)
+Key behavioral dimensions analyzed:
+* Customer call usage patterns (Day, Evening, Night, and International minutes/charges)
+* Revenue contribution across customer segments
+* Customer service call frequency and support friction
+* International plan and voice mail plan adoption rates
+
+> **Key EDA Insight:** Customers making **four or more customer service calls** exhibited dramatically higher churn rates, pinpointing unresolved support issues as a critical retention risk.
+
+### 3. Business Intelligence Dashboard (Power BI)
+[Power BI Dashboard Preview](images/dashboard_preview.png)
+<img width="602" height="341" alt="image" src="https://github.com/user-attachments/assets/5569aa4a-9469-4a7d-b92c-5df555541581" />
+
+An interactive Power BI executive dashboard was built to track:
+* **Headline KPI Cards:** Total Customers (2,666), Churn Count (388), Churn Rate (14.55%), Revenue at Risk (\$25,157.85), and Avg. Service Calls (1.56).
+* **Segment & Trend Breakdowns:** Churn distribution across customer service call tiers, geographic states, international plan adoption, and charge brackets.
+
+### 4. Statistical Analysis
+To validate visual patterns from EDA, formal statistical tests were conducted:
+* **Methods Applied:** Independent Two-Sample T-Test, Chi-Square Test of Independence, and Logistic Regression.
+* **Statistically Significant Drivers:**
+  1. Customer service call frequency
+  2. Daytime charge and minute volume
+  3. Active international plan subscription
+
+### 5. Predictive Modeling
+* **Algorithm:** Random Forest Classifier
+* **Evaluation Framework:** Confusion Matrix, ROC-AUC Score, and Feature Importance ranking.
+* **Outcome:** Successfully classified high-risk accounts and ranked the top predictive features driving customer attrition, enabling proactive retention scoring.
+
+---
+
+## 💡 Key Findings & Prescriptive Recommendations
+
+### High-Risk Customer Profile
+* Frequent customer support interactions (especially 3–4+ calls)
+* High daytime call volume (exceeding 220 daytime minutes)
+* Active international calling plans experiencing high per-minute charges
+
+### Actionable Retention Strategy
+1. **Early Service Escalation (Tier-2 Routing):** Automatically escalate customers to senior Tier-2 support after their **third customer service call** to resolve recurring issues before frustration leads to cancellation.
+2. **International Plan Restructuring:** Redesign international calling packages and introduce tiered bundle discounts for high-usage international subscribers.
+3. **High-Value Loyalty Incentives:** Deploy proactive retention credits, plan upgrades, and loyalty rewards for heavy daytime users—specifically targeting accounts exceeding **220 daytime minutes**.
+
+---
+
+## 🛠️ Technology Stack
+* **Programming & Data Manipulation:** Python, Pandas, NumPy
+* **Visualization & BI:** Power BI, Matplotlib, Seaborn
+* **Statistical & Predictive Modeling:** Scikit-learn, SciPy / Statsmodels (T-Test, Chi-Square, Logistic Regression, Random Forest)
+
+---
+
+## 📂 Repository Structure
+```text
+├── data/          # Raw and processed telecom churn datasets
+├── notebooks/     # Jupyter notebooks for EDA, statistical tests, and ML modeling
+├── dashboard/     # Power BI (.pbix) interactive dashboard file
+├── reports/       # Executive summary reports and statistical output tables
+├── models/        # Saved Random Forest model artifacts
+├── images/        # Dashboard screenshots and EDA/feature importance charts
+└── README.md      # Project documentation
+
+Nnabuk Akpan
+Data Analytics Internship Project | Telecom Customer Churn Analysis
