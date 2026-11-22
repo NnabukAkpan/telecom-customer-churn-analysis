@@ -108,5 +108,6 @@ To validate visual patterns from EDA, formal statistical tests were conducted:
 ├── images/        # Dashboard screenshots and EDA/feature importance charts
 └── README.md      # Project documentation
 
+Author
 Nnabuk Akpan
 Data Analytics Internship Project | Telecom Customer Churn Analysis
