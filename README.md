@@ -57,6 +57,7 @@ Key behavioral dimensions analyzed:
 ### 3. Business Intelligence Dashboard (Power BI)
 [Power BI Dashboard Preview](images/dashboard_preview.png)
 An interactive Power BI executive dashboard was built to track:
+"C:\Users\Admin\OneDrive\Pictures\Screenshots\Screenshot 2026-11-24 102334.png"
 * **Headline KPI Cards:** Total Customers (2,666), Churn Count (388), Churn Rate (14.55%), Revenue at Risk (\$25,157.85), and Avg. Service Calls (1.56).
 * **Segment & Trend Breakdowns:** Churn distribution across customer service call tiers, geographic states, international plan adoption, and charge brackets.
 * Business Intelligence & Statistical Validation
