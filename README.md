@@ -55,7 +55,7 @@ Key behavioral dimensions analyzed:
 > **Key EDA Insight:** Customers making **four or more customer service calls** exhibited dramatically higher churn rates, pinpointing unresolved support issues as a critical retention risk.
 
 ### 3. Business Intelligence Dashboard (Power BI)
-[Power BI Dashboard Preview](images/dashboard_preview.png)!"C:\Users\Admin\OneDrive\Pictures\Screenshots\Screenshot 2026-11-24 102334.png"
+[Power BI Dashboard Preview](images/dashboard_preview.png)!https://github.com/NnabukAkpan/telecom-customer-churn-analysis/blob/main/Telecom%20Dashboard.png
 An interactive Power BI executive dashboard was built to track:
 * **Headline KPI Cards:** Total Customers (2,666), Churn Count (388), Churn Rate (14.55%), Revenue at Risk (\$25,157.85), and Avg. Service Calls (1.56).
 * **Segment & Trend Breakdowns:** Churn distribution across customer service call tiers, geographic states, international plan adoption, and charge brackets.
