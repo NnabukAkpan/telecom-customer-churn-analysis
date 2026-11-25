@@ -176,6 +176,7 @@ An interactive Power BI dashboard (`dashboard/telecom_customer_churn.pbix`) was 
 - **KPI Summary Cards:** Total Customers (2,666), Churn Count (388), Churn Rate (14.55%), Revenue at Risk ($25,157.85), and Avg. Service Calls (1.56).
 - **Interactive Visuals:** Geographic churn distribution across states, customer service call thresholds, and plan adoption rates.
 
+
 ### 4. Statistical Analysis & Hypothesis Testing
 Validated visual EDA trends through rigorous statistical evaluation:
 - **Methods:** Two-Sample T-Tests, Chi-Square Tests of Independence, and Logistic Regression.
