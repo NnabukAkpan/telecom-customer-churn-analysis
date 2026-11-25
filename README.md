@@ -114,3 +114,111 @@ To validate visual patterns from EDA, formal statistical tests were conducted:
 Author
 Nnabuk Akpan
 Data Analytics Internship Project | Telecom Customer Churn Analysis
+
+
+# 📊 Telecom Customer Churn Analysis: End-to-End Analytics & Prescriptive Strategy
+
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine_Learning-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-EDA-150458?style=for-the-badge&logo=pandas&logoColor=white)
+
+## 📌 Project Overview
+Customer churn is one of the most significant revenue risks in the telecommunications industry, where acquiring new customers costs up to five times more than retaining existing ones. This project presents an end-to-end data analytics and machine learning solution that identifies key churn drivers, quantifies financial exposure, predicts customer attrition, and formulates data-driven retention strategies.
+
+By bridging data preprocessing, exploratory data analysis (EDA), statistical hypothesis testing, interactive business intelligence, and predictive modeling, this project turns raw telecom customer records into executive-level prescriptive insights.
+
+---
+
+## 🎯 Business Problem & Objectives
+Unidentified customer churn directly erodes recurring monthly revenue. The primary goals of this project are to:
+- **Data Preparation:** Clean, validate, and structure customer records for analysis.
+- **Exploratory Data Analysis:** Uncover behavioral trends, service call dynamics, and usage patterns.
+- **BI Reporting:** Build an executive Power BI dashboard to monitor churn metrics and segment breakdowns.
+- **Statistical Validation:** Perform hypothesis testing and logistic regression to confirm statistically significant churn drivers.
+- **Predictive Modeling:** Train a machine learning classifier to accurately score customer churn risk.
+- **Prescriptive Strategy:** Deliver targeted, cost-effective retention recommendations for high-risk accounts.
+
+---
+
+## 📈 Dataset Summary & Headline KPIs
+The analysis was performed on the `churn-bigml-80.csv` dataset, covering **2,666 customer accounts**:
+
+| Metric | Value | Business Context |
+| :--- | :--- | :--- |
+| **Total Accounts Analyzed** | **2,666** | Complete active & churned customer base |
+| **Total Churned Accounts** | **388** | Customer accounts that discontinued service |
+| **Baseline Churn Rate** | **14.55%** | Portfolio-wide customer attrition rate |
+| **Monthly Revenue at Risk** | **$25,157.85** | Direct financial exposure from churned accounts |
+| **Avg. Service Call Frequency** | **1.56** | Average support interactions per customer |
+
+---
+
+## 🔄 End-to-End Project Workflow
+
+### 1. Data Cleaning & Preprocessing
+- Verified schema integrity and checked for missing or duplicated values across all 2,666 records.
+- Formatted categorical features (`International plan`, `Voice mail plan`) and created a binary target variable (`Churn_binary`).
+- Engineered aggregate usage and charge features to measure monetary impact across daytime, evening, night, and international calls.
+
+### 2. Exploratory Data Analysis (EDA)
+Explored key customer dimensions:
+- Day, Evening, Night, and International usage minutes vs. billing charges.
+- Service call volume as a measure of customer support friction.
+- Churn rate variances between plan subscribers (International & Voice Mail plans).
+
+> **Key EDA Finding:** Customer churn spikes sharply for users making **4 or more customer service calls**, pointing to unresolved technical or billing friction as a primary driver of attrition.
+
+### 3. Business Intelligence Dashboard (Power BI)
+![Power BI Executive Dashboard Preview]("C:\Users\Admin\OneDrive\Pictures\Screenshots\Screenshot 2026-11-24 102334.png"/dashboard_preview.png)
+
+An interactive Power BI dashboard (`dashboard/telecom_customer_churn.pbix`) was developed to provide executive visibility:
+- **KPI Summary Cards:** Total Customers (2,666), Churn Count (388), Churn Rate (14.55%), Revenue at Risk ($25,157.85), and Avg. Service Calls (1.56).
+- **Interactive Visuals:** Geographic churn distribution across states, customer service call thresholds, and plan adoption rates.
+
+### 4. Statistical Analysis & Hypothesis Testing
+Validated visual EDA trends through rigorous statistical evaluation:
+- **Methods:** Two-Sample T-Tests, Chi-Square Tests of Independence, and Logistic Regression.
+- **Statistically Significant Drivers (p < 0.05):**
+  1. Customer service call frequency
+  2. Daytime minute volume & charge totals
+  3. Active international plan subscription
+
+### 5. Predictive Machine Learning Modeling
+- **Model:** Random Forest Classifier
+- **Evaluation Metrics:** Confusion Matrix, ROC-AUC Score, and Feature Importance ranking.
+- **Result:** Successfully prioritized high-risk accounts, providing operational scores to target proactive retention interventions.
+
+---
+
+## 💡 Key Findings & Prescriptive Recommendations
+
+### High-Risk Customer Profile
+- **Support Friction:** Accounts with 3–4+ customer service interactions.
+- **Heavy Usage:** High daytime usage exceeding **220 daytime minutes**.
+- **International Subscribers:** Customers on international calling plans experiencing elevated per-minute billing rates.
+
+### Actionable Retention Playbook
+1. **Automated Tier-2 Support Escalation:** Automatically flag and route accounts to senior Tier-2 customer service reps upon reaching their **third support call** to address issues before cancellation.
+2. **International Rate Package Overhaul:** Restructure international plans to offer tiered rates and usage bundles for frequent international callers.
+3. **Proactive Daytime Loyalty Incentives:** Deploy targeted retention credits, loyalty rewards, or plan upgrades to heavy daytime users reaching usage thresholds.
+
+---
+
+## 🛠️ Technology Stack
+- **Language & Data Processing:** Python 3.10+, Pandas, NumPy
+- **Exploratory Visualization:** Matplotlib, Seaborn
+- **Business Intelligence:** Power BI Desktop (`.pbix`)
+- **Machine Learning & Statistics:** Scikit-Learn, SciPy, Statsmodels
+
+---
+
+## 📂 Repository Structure
+```text
+├── data/          # Raw and cleaned datasets (churn_cleaned.csv)
+├── notebooks/     # Jupyter notebooks (EDA, Statistical Testing, ML Pipeline)
+├── dashboard/     # Power BI file (telecom_customer_churn.pbix)
+├── reports/       # Executive summaries and exported KPI reports
+├── models/        # Trained Random Forest model artifacts
+├── images/        # Dashboard screenshots (dashboard_preview.png) & charts
+└── README.md      # Comprehensive project documentation
