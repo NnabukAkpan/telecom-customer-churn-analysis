@@ -60,10 +60,9 @@ An interactive Power BI executive dashboard was built to track:
 * **Headline KPI Cards:** Total Customers (2,666), Churn Count (388), Churn Rate (14.55%), Revenue at Risk (\$25,157.85), and Avg. Service Calls (1.56).
 * **Segment & Trend Breakdowns:** Churn distribution across customer service call tiers, geographic states, international plan adoption, and charge brackets.
 * Business Intelligence & Statistical Validation
-* **Task 1 — Power BI Executive Dashboard:** [`telecom_customer_churn.pbix`](bi_dashboard/telecom_customer_churn.pbix)
+* **Task 1 — Power BI Executive Dashboard:**)
   * Built an interactive report tracking KPI cards, regional churn breakdowns, service call thresholds, and international plan exposure.
   
-  ![Executive Dashboard](bi_dashboard/"C:\Users\Admin\OneDrive\Pictures\Screenshots\Telecom Dashboard.png"/01_executive_kpi_overview.png)
 
 ### 4. Statistical Analysis
 To validate visual patterns from EDA, formal statistical tests were conducted:
