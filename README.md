@@ -63,7 +63,7 @@ An interactive Power BI executive dashboard was built to track:
 * **Task 1 — Power BI Executive Dashboard:** [`telecom_customer_churn.pbix`](bi_dashboard/telecom_customer_churn.pbix)
   * Built an interactive report tracking KPI cards, regional churn breakdowns, service call thresholds, and international plan exposure.
   
-  ![Executive Dashboard](bi_dashboard/screenshots/01_executive_kpi_overview.png)
+  ![Executive Dashboard](bi_dashboard/"C:\Users\Admin\OneDrive\Pictures\Screenshots\Telecom Dashboard.png"/01_executive_kpi_overview.png)
 
 ### 4. Statistical Analysis
 To validate visual patterns from EDA, formal statistical tests were conducted:
