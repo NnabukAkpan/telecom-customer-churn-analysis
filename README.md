@@ -60,7 +60,6 @@ An interactive Power BI executive dashboard was built to track:
 * **Headline KPI Cards:** Total Customers (2,666), Churn Count (388), Churn Rate (14.55%), Revenue at Risk (\$25,157.85), and Avg. Service Calls (1.56).
 * **Segment & Trend Breakdowns:** Churn distribution across customer service call tiers, geographic states, international plan adoption, and charge brackets.
 * Business Intelligence & Statistical Validation
-* **Task 1 — Power BI Executive Dashboard:**)
   * Built an interactive report tracking KPI cards, regional churn breakdowns, service call thresholds, and international plan exposure.
   
 
